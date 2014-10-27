@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/help.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/design.css">
+        <title>Memory Game</title>
+    </head>
+    <body>
+        <h1>Memory Game</h1>
+        <div id="div1" >
+            <aside>Please Login Here :<br>
+            <br>
+            <input type="text" id="uname" name="uname" />
+            <input type="submit" id="login" value="play" class="btn" onclick="welcome()">
+            </aside>
+            </div>
+        <div id="div4">
+            <p id="p1">Congratulation.!!</p>
+            <p id="p2">You Finished the game in <span id="finishtime"></span></p>
+            <p id="p2">And&nbsp;<span id="no_click"></span>&nbsp;clicks</p>
+            <input type="submit" class="btn" value="Click to restart" onclick="refresh()" >
+        </div>
+        
+        <div id="div2">
+        
+        <p id="sg">Time
+            <span id="timer">0.00</span></p>
+        <p>Score &nbsp;<span id="score">0</span></p>
+        <p>Clicks &nbsp;<span id="click">0</span></p>
+        <div id="div3">
+            <input type="submit" id="pause" value="Pause" onclick="pause(this.id)" />
+            <input type="submit" id="restart" value="Play" onclick="restart(this.id)" />
+        </div>
+        </div>
+        <div id="tbl">
+            <table id="tiles" >
+            <tr>
+                <td><img id="img1" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img2" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img3" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img4" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+            </tr>
+            <tr>
+                <td><img id="img5" class="imgs" src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img6" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img7" class="imgs" src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img8" class="imgs" src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+            </tr>
+            <tr>
+                <td><img id="img9" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img10" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img11" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img12" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+            </tr>
+            <tr>
+                <td><img id="img13" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img14" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img15" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+                <td><img id="img16" class="imgs"  src="images/back.gif" onclick="flip(this.id)" alt=":P"></td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
